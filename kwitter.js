@@ -1,7 +1,21 @@
+var firebaseConfig = {
+    apiKey: "AIzaSyAyyKrd47dHH3kR6RwQGk39IW2bEyyQlJ4",
+    authDomain: "kwitter-7fb0e.firebaseapp.com",
+    databaseURL: "https://kwitter-7fb0e-default-rtdb.firebaseio.com",
+    projectId: "kwitter-7fb0e",
+    storageBucket: "kwitter-7fb0e.appspot.com",
+    messagingSenderId: "726687935171",
+    appId: "1:726687935171:web:24abb49749ed3103b85076"
+  };
+
+firebase.initializeApp(firebaseConfig);
 
 function addUser() 
 {
-    usnm = document.getElementById("userName").value ;
-    localStorage.setItem("User-Name", user_name) ;
+    un = document.getElementById("username").value ;
+    localStorage.setItem("User-Name", un) ;
+    firebase.database().ref("/").child(un).update({
+        purpose : "adding user"
+    }) ;
     window.location = "kwitter_room.html" ;
 }
