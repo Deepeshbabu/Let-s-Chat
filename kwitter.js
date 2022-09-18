@@ -14,8 +14,5 @@ function addUser()
 {
     un = document.getElementById("username").value ;
     localStorage.setItem("User-Name", un) ;
-    firebase.database().ref("/").child(un).update({
-        purpose : "adding user"
-    }) ;
     window.location = "kwitter_room.html" ;
 }
