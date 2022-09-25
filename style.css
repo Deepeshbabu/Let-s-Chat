@@ -6,12 +6,12 @@ html, body
 
 body
 {
-background-image: linear-gradient(to right top, #f13333, orange, #3dc118, #2409ed, #d3111b);
+background-image: linear-gradient(to right top, #ff0000,red, #ff6600, #ffae00, yellow, #c2ff09,rgb(55, 255, 0),cyan,rgb(4, 0, 255),rgb(188, 89, 199),rgb(255, 0, 255),rgb(253, 9, 164));
 }
 
 .header
 {
-	color: white;font-family: "Times New Roman", Times, serif; font-style:italic ;font-size: 50px;letter-spacing: 8px;margin-top: 80px;
+	color: white;font-family: 'Times New Roman', Times, serif;font-size: 50px;letter-spacing: 5px;margin-top: 80px;
 }
 .header img
 {
@@ -25,7 +25,7 @@ background-image: linear-gradient(to right top, #f13333, orange, #3dc118, #2409e
 
 .logo
 {
-	width: 180px;margin-top: 30px;border-radius: 40px;
+	width: 80px;margin-top: 30px;border-radius: 40px;
 }
 
 #login_button
@@ -42,10 +42,7 @@ background-image: linear-gradient(to right top, #f13333, orange, #3dc118, #2409e
 
 #logout
 {
-	font-size: 20px;
-	float: right;
-	margin-top: 30px;
-	margin-left: 10px;
+	font-size: 20px; float: right;
 }
 
 
@@ -76,6 +73,7 @@ background-image: linear-gradient(to right top, #f13333, orange, #3dc118, #2409e
 .input_div_message_page #msg
 {
 	width: 80%;
+	margin-bottom: 5px;
 }
 .input_div_message_page button
 {
@@ -96,7 +94,21 @@ background-image: linear-gradient(to right top, #f13333, orange, #3dc118, #2409e
 	padding-left:5px;color:grey;
 }
 
-.xyz 
+#disnm
 {
-	width: 80px;margin-bottom: 30px;border-radius: 25px;
+	font-size: 40px;
+	font-style: bold;
+	font-family: 'Times New Roman', Times, serif;
+	margin-top: 2px;
+	color: aliceblue;
+}
+
+#logout 
+{
+	margin-top: 10px;
+}
+
+#ccc 
+{
+	border-radius: 50px;
 }

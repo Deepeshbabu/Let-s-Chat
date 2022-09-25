@@ -1,4 +1,3 @@
-  
   var firebaseConfig = {
       apiKey: "AIzaSyAt_lR3YaY6IZXyFM2vXQTLPxw9cC9C2Mk",
       authDomain: "let-s-chat-cfaae.firebaseapp.com",
@@ -34,10 +33,17 @@
       //End code
       });});}
       getData();
-
-  function redirectToRoomName(name) 
-  {
-      console.log(name);
-      localStorage.setItem("Room-Name", name) ;
-      window.location = "kwitter_page.html" ;
-  }
+      
+      function redirectToRoomName(name) 
+      {
+          console.log(name);
+          localStorage.setItem("room-name", name) ;
+          window.location = "kwitter_page.html" ;
+      }
+    
+      function Logout() 
+      {
+        localStorage.removeItem("room-name") ;
+        localStorage.removeItem("User-Name") ;
+        window.location = "index.html" ;
+      }
